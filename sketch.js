@@ -1,4 +1,6 @@
-let bubbles = [];
+let bubble1;
+let bubble2;
+
 
 function setup() {
   createCanvas(600, 400);
