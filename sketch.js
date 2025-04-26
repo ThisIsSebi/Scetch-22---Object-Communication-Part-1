@@ -4,14 +4,25 @@ let bubble2;
 
 function setup() {
   createCanvas(600, 400);
+  bubble1 = new Bubble(200, 200);
+  bubble2 = new Bubble(300,200);
 }
 
 function draw() {
   background(0);
+ 
+  let d = dist(bubble1.x, bubble1.y, bubble2.x, bubble2.y);
+  if(d < bubble1.r + bubble2.r){
+    background(200,0,100);
+  }
+  bubble1.show();
+  bubble2.show();
+  bubble1.move();
+  bubble2.move();
 }
 
 class Bubble {
-  constructor(x, y, r) {
+  constructor(x, y, r=50) {
     this.x = x;
     this.y = y;
     this.r = r;
