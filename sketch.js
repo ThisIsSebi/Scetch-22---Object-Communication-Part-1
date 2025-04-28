@@ -14,7 +14,7 @@ function draw() {
   background(0);
 
   if (bubble1.intersects(bubble2)) {
-    background(200, 0, 100);
+    background(255, 0, 0);
   }
 
   bubble1.show();
