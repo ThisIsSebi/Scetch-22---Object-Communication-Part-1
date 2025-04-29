@@ -14,7 +14,7 @@ function draw() {
   background(0);
 
   if (bubble1.intersects(bubble2)) {
-    background(255, 0, 0);
+    background(0, 255, 0);
   }
 
   bubble1.show();
@@ -64,7 +64,7 @@ class Bubble {
   show() {
     stroke(255);
     strokeWeight(4);
-    fill(this.brightness, 125);
+    fill(this.brightness, 200);
     ellipse(this.x, this.y, this.r * 2);
   }
 }
